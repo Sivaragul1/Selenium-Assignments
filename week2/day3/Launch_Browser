@@ -1,1 +1,23 @@
+package week2.day3;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class Launch_Browser {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//ChromeDriver driver = new ChromeDriver();
+		WebDriver driver1 = new ChromeDriver();
+		
+		driver1.manage().window().maximize();
+		driver1.get("http://leaftaps.com/opentaps/control/main");
+		
+		String title = driver1.getTitle();
+		System.out.println(title);
+		
+	}
+}
 
